@@ -2,7 +2,7 @@
 
 The OCD Patient Analytics project aims to provide comprehensive insights into the demographic and clinical profiles of individuals diagnosed with Obsessive-Compulsive Disorder (OCD). By leveraging SQL and PowerBI, this project analyzes a dataset of 1500 individuals, exploring various aspects such as demographics, clinical information, and symptom severity.
 
-🔍 SQL queries? Check them out here: [[project_sql folder](/project_sql/](https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/blob/main/ocd_patients.sql))
+🔍 SQL queries? Check them out here: [(https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/blob/main/ocd_patients.sql))
 
 # Background
 Motivated by the need to better navigate the data scientist job market, this project aims to identify top-paid and in-demand skills, simplifying the job search process for others to find optimal positions.
