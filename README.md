@@ -111,7 +111,7 @@ The analysis indicates a diverse ethnic representation among OCD patients, with 
 
 <img width="913" alt="Ethnicity" src="https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/assets/173167594/3bda2c59-1ed7-4baa-9da9-e353afd29929">
 
-*Donut chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
+*clustered bar chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
 
 
 
@@ -156,7 +156,7 @@ The data shows a general upward trend in the number of OCD diagnoses from 2013 t
 
 <img width="1440" alt="Month" src="https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/assets/173167594/02e2ea80-55d9-4760-a0e2-b4931681f2a7">
 
-*Donut chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
+*Line chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
 
 
 ### 4. What is the most common Obsession Type (Count) & its respective Average Obsession Score
@@ -197,7 +197,7 @@ The data indicates that "Harm-related" obsessions are the most prevalent among p
 
 <img width="748" alt="obsession_type" src="https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/assets/173167594/ab352b90-ac5a-490e-b3a1-b62977a58c95">
 
-*Donut chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
+*Stacked column chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
 
 
 ### 5. What is the most common Compulsion Type (Count) & its respective Average Compulsion Score
@@ -237,7 +237,7 @@ The data reveals that "Washing" is the most common compulsion among OCD patients
 
 <img width="693" alt="compulsion_type" src="https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/assets/173167594/86741fff-07f0-40e0-8524-2c79c6868a70">
 
-*Donut chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
+*Stacked column chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
 
 
 # What I Learned
