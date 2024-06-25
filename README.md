@@ -114,3 +114,52 @@ The analysis indicates a diverse ethnic representation among OCD patients, with 
 *Donut chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
 
 
+
+### 3. CNumber of people diagnosed with OCD Month-over-Month (MoM)
+Focuses on the temporal trends in OCD diagnoses. By examining the number of new OCD diagnoses on a month-over-month basis, we can identify any seasonal patterns or trends in the diagnosis rate.
+
+```sql
+-- ALTER TABLE PortfolioProject..ocd_patient_dataset
+-- ALTER COLUMN OCD_Diagnosis_Date DATE;
+
+SELECT 
+    CONVERT(VARCHAR(7), [OCD_Diagnosis_Date], 120) + '-01 00:00:00' AS month, 
+--    OCD_Diagnosis_Date,
+    COUNT(Patient_ID) AS patient_count
+FROM 
+    PortfolioProject..ocd_patient_dataset
+GROUP BY 
+    CONVERT(VARCHAR(7), [OCD_Diagnosis_Date], 120) + '-01 00:00:00'
+ORDER BY 
+    month;
+```
+
+### Key Trends
+
+**1. Initial Increase:** 
+- The number of diagnosed cases shows a steady increase from November 2013 to March 2014, followed by some fluctuation.
+  
+**2. Seasonal Peaks:**
+- There are noticeable peaks in diagnoses around October to January in multiple years, suggesting possible seasonal trends.
+
+**3. Highest Peaks:**
+- The highest patient counts are recorded in December 2015 (23 cases) and March 2018 (25 cases).
+
+**4. Pandemic Effect:**
+- During 2020, the numbers show a stable trend despite the COVID-19 pandemic, indicating no significant drop or rise compared to other years.
+
+**5. Decline Post-2021:**
+- There's a decline in the number of diagnosed cases starting from early 2021, with a noticeable drop in November 2022 (only 2 cases).
+
+### Summary
+The data shows a general upward trend in the number of OCD diagnoses from 2013 to 2015, with seasonal peaks suggesting an increase in diagnoses during the fall and winter months. The highest monthly counts were observed in late 2015 and early 2018. The impact of the COVID-19 pandemic on OCD diagnoses appears minimal, with numbers remaining relatively stable through 2020. However, a decline is noted from 2021 onwards, culminating in a significant drop in November 2022. This analysis could benefit from further investigation into the factors influencing these trends, such as seasonal variations, healthcare access, and broader societal impacts like the pandemic.
+
+<img width="1440" alt="Month" src="https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/assets/173167594/02e2ea80-55d9-4760-a0e2-b4931681f2a7">
+
+*Donut chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
+
+
+
+
+
+
