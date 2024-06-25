@@ -5,7 +5,7 @@ The OCD Patient Analytics project aims to provide comprehensive insights into th
 🔍 SQL queries? Check them out here: https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/blob/main/ocd_patients.sql
 
 📊 PowerBI Dashboard? Check it out here:
-https://app.powerbi.com/groups/me/reports/ccb804a3-aaa2-498c-b56d-64cf445ba6ca/f34b818261d2ffba6fd5?experience=power-bi
+https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/blob/main/OCD_Patient_Dashboard.pbix
 
 # Background
 Motivated by the need to better understand OCD and its impact on different population groups, this project utilizes a rich dataset to answer critical questions about the disorder. The insights gained can help researchers, clinicians, and mental health professionals to improve treatment approaches and patient outcomes.
