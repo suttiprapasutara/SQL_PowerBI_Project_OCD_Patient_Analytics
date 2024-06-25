@@ -4,6 +4,8 @@ The OCD Patient Analytics project aims to provide comprehensive insights into th
 
 🔍 SQL queries? Check them out here: https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/blob/main/ocd_patients.sql
 
+📊 PowerBI Dashboard? Check it out here:
+
 # Background
 Motivated by the need to better understand OCD and its impact on different population groups, this project utilizes a rich dataset to answer critical questions about the disorder. The insights gained can help researchers, clinicians, and mental health professionals to improve treatment approaches and patient outcomes.
 
@@ -70,3 +72,6 @@ FROM data;
 - The balanced gender distribution implies that treatment approaches and resources should be equally accessible and tailored to both males and females. Understanding any subtle differences in symptom manifestation or treatment response between genders may be beneficial for clinicians.
 
 ### Summary
+The analysis reveals a nearly equal distribution of OCD patients between females and males, with 49.8% females and 50.2% males. This suggests that OCD does not significantly favor one gender over the other in terms of prevalence. The slight male predominance is minimal, indicating that both genders are similarly affected by OCD in this dataset. This balanced distribution highlights the importance of ensuring that treatment and support services are equally available to all patients, regardless of gender. Further analysis could explore if there are any differences in the severity or types of OCD symptoms between genders to provide more nuanced insights.
+
+
