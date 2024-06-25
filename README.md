@@ -21,3 +21,39 @@ Motivated by the need to better understand OCD and its impact on different popul
 - **Docker:** For containerizing the SQL database.
 - **Azure Data Studio:** My preferred tool for database management and executing SQL queries.
 - **GitHub:** Crucial for version control and sharing SQL scripts and analyses, ensuring collaboration and project tracking.
+
+# The Analysis
+### 1. Count & Percent of Female vs Male that have OCD & Average Obsession Score by Gender
+Aims to determine the distribution of OCD patients by gender. By calculating the count and percentage of females versus males with OCD, along with the average obsession score for each gender, we can identify potential gender-based differences in OCD prevalence and symptom severity.
+
+```sql
+WITH data AS (
+SELECT 
+    Gender,
+    COUNT(Patient_ID) AS patient_count,
+    AVG(Y_BOCS_Score_Obsessions) AS avg_obs_score
+
+FROM PortfolioProject..ocd_patient_dataset
+
+GROUP BY 
+    Gender
+
+--ORDER BY patient_count
+)
+
+SELECT 
+    SUM(CASE WHEN Gender = 'Female' THEN patient_count ELSE 0 END) AS female_count,
+    SUM(CASE WHEN Gender = 'Male' THEN patient_count ELSE 0 END) AS male_count,
+    
+    ROUND(
+    SUM(CASE WHEN Gender = 'Female' THEN patient_count ELSE 0 END) * 1.0 /
+    (SUM(CASE WHEN Gender = 'Female' THEN patient_count ELSE 0 END) +
+    SUM(CASE WHEN Gender = 'Male' THEN patient_count ELSE 0 END)) * 100, 2) AS percent_female,
+    
+    ROUND(
+    SUM(CASE WHEN Gender = 'Male' THEN patient_count ELSE 0 END) * 1.0 /
+    (SUM(CASE WHEN Gender = 'Female' THEN patient_count ELSE 0 END) +
+    SUM(CASE WHEN Gender = 'Male' THEN patient_count ELSE 0 END)) * 100, 2) AS percent_male
+
+FROM data;
+```
