@@ -57,3 +57,9 @@ SELECT
 
 FROM data;
 ```
+
+### Key Trends
+
+**Balanced Gender Distribution:** The dataset shows a nearly equal distribution of OCD patients by gender, with 747 females (49.8%) and 753 males (50.2%). This indicates that OCD affects males and females almost equally in this sample population.
+
+### Summary
