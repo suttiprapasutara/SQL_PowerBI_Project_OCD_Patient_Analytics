@@ -162,6 +162,20 @@ The data shows a general upward trend in the number of OCD diagnoses from 2013 t
 ### 4. What is the most common Obsession Type (Count) & its respective Average Obsession Score
 Identifies the most prevalent types of obsessions among OCD patients. By determining the count of each obsession type and their respective average obsession scores, we can understand which obsessions are most common and their severity levels.
 
+```sql
+SELECT
+    Obsession_Type,
+    COUNT(Patient_ID) AS patient_count,
+    AVG(Y_BOCS_Score_Obsessions) AS avg_obs_score
+
+FROM 
+    PortfolioProject..ocd_patient_dataset
+
+GROUP BY Obsession_Type
+
+ORDER BY patient_count;
+```
+
 ### Key Trends
 
 **1. Most Common Obsession:** 
