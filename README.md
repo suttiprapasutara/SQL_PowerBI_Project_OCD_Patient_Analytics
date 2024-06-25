@@ -79,3 +79,38 @@ The analysis reveals a nearly equal distribution of OCD patients between females
 *Donut chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
 
 
+### 2. Count of Patients by Ethnicity and their respective Average Obsession Score
+Explores the distribution of OCD patients across different ethnic groups. By counting the number of patients by ethnicity and calculating their average obsession scores, we can assess how OCD affects various ethnic populations.
+
+```sql
+SELECT 
+    Ethnicity,
+    COUNT(Patient_ID) AS patient_count,
+    AVG(Y_BOCS_Score_Obsessions) AS avg_obs_score
+
+FROM PortfolioProject..ocd_patient_dataset
+
+GROUP BY Ethnicity
+
+ORDER BY patient_count;
+```
+
+### Key Trends
+
+**1. Ethnic Distribution:** 
+- The dataset shows a diverse ethnic distribution of OCD patients, with Caucasians having the highest patient count (398), followed by Hispanics (392), Asians (386), and Africans (324). This indicates that OCD affects individuals across various ethnicities.
+
+**2. Similar Obsession Scores:**
+- The average obsession scores are relatively similar across different ethnic groups, with Asians and Hispanics having an average score of 20, while Africans and Caucasians have an average score of 19. This suggests that the severity of obsession symptoms does not vary significantly between these ethnicities.
+
+**3. Diverse Sample Population:**
+- The diverse representation of ethnicities in the dataset highlights the importance of considering cultural and ethnic factors when studying OCD and developing treatment plans. The similarities in average obsession scores across ethnicities suggest that OCD's impact on obsession severity is consistent regardless of ethnic background.
+
+### Summary
+The analysis indicates a diverse ethnic representation among OCD patients, with Caucasians (398), Hispanics (392), Asians (386), and Africans (324) making up the sample population. The average obsession scores are relatively uniform across these ethnic groups, ranging from 19 to 20. This uniformity in obsession scores suggests that the severity of obsession symptoms is consistent across different ethnicities, emphasizing the universal nature of OCD. The findings underscore the need for culturally sensitive approaches in OCD research and treatment, ensuring that all ethnic groups receive equitable care and support.
+
+<img width="913" alt="Ethnicity" src="https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/assets/173167594/3bda2c59-1ed7-4baa-9da9-e353afd29929">
+
+*Donut chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
+
+
