@@ -233,11 +233,13 @@ Through analyzing the OCD Patient Dataset using SQL and PowerBI, several key ins
 - **Temporal Trends:** Observing the trends in diagnosis over time uncovered seasonal variations and possible external factors influencing OCD incidence.
 
 # Conclusion
+## Insights
 This project provided valuable insights into the demographic and clinical profiles of OCD patients, highlighting several key findings:
 - **Prevalence and Severity:** "Harm-related" obsessions and "Washing" compulsions were among the most prevalent types, indicating areas where clinical interventions may be focused.
 - **Temporal Patterns:** Seasonal fluctuations in OCD diagnoses and stable average scores across different types of symptoms suggest consistent patterns in symptom manifestation.
 - **Implications for Treatment:** Understanding these patterns can aid in developing targeted treatment strategies that address specific symptom profiles and demographic disparities among OCD patients.
 
+## Closing Thoughts
 By leveraging SQL for data manipulation and PowerBI for visualization, this project not only provided actionable insights for healthcare professionals but also underscored the importance of data-driven approaches in understanding and managing complex psychiatric conditions like OCD. Future directions may involve deeper dives into sub-group analyses and integrating additional datasets to further enrich our understanding of OCD's multifaceted nature.
 
 
