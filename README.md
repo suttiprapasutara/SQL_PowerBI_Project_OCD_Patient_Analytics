@@ -74,7 +74,7 @@ FROM data;
 ### Summary
 The analysis reveals a nearly equal distribution of OCD patients between females and males, with 49.8% females and 50.2% males. This suggests that OCD does not significantly favor one gender over the other in terms of prevalence. The slight male predominance is minimal, indicating that both genders are similarly affected by OCD in this dataset. This balanced distribution highlights the importance of ensuring that treatment and support services are equally available to all patients, regardless of gender. Further analysis could explore if there are any differences in the severity or types of OCD symptoms between genders to provide more nuanced insights.
 
-![OCD By Gender]([assets/top_paying_jobs.png](https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/blob/main/assests/Gender.png))
+![OCD By Gender]([assets/top_paying_jobs.png]<img width="535" alt="Gender" src="https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/assets/173167594/f614ab67-50a0-40fd-92b9-58277bb45425">
 *Donut chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
 
 
