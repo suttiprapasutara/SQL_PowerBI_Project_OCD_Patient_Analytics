@@ -257,6 +257,9 @@ This project provided valuable insights into the demographic and clinical profil
 By leveraging SQL for data manipulation and PowerBI for visualization, this project not only provided actionable insights for healthcare professionals but also underscored the importance of data-driven approaches in understanding and managing complex psychiatric conditions like OCD. Future directions may involve deeper dives into sub-group analyses and integrating additional datasets to further enrich our understanding of OCD's multifaceted nature.
 
 
+*Dataset from https://www.kaggle.com/datasets/ohinhaque/ocd-patient-dataset-demographics-and-clinical-data/*
+
+
 
 
 
