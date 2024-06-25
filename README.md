@@ -115,7 +115,7 @@ The analysis indicates a diverse ethnic representation among OCD patients, with 
 
 
 
-### 3. CNumber of people diagnosed with OCD Month-over-Month (MoM)
+### 3. Number of people diagnosed with OCD Month-over-Month (MoM)
 Focuses on the temporal trends in OCD diagnoses. By examining the number of new OCD diagnoses on a month-over-month basis, we can identify any seasonal patterns or trends in the diagnosis rate.
 
 ```sql
@@ -157,6 +157,96 @@ The data shows a general upward trend in the number of OCD diagnoses from 2013 t
 <img width="1440" alt="Month" src="https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/assets/173167594/02e2ea80-55d9-4760-a0e2-b4931681f2a7">
 
 *Donut chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
+
+
+### 4. What is the most common Obsession Type (Count) & its respective Average Obsession Score
+Identifies the most prevalent types of obsessions among OCD patients. By determining the count of each obsession type and their respective average obsession scores, we can understand which obsessions are most common and their severity levels.
+
+### Key Trends
+
+**1. Most Common Obsession:** 
+- "Harm-related" is the most common obsession type, with 333 patients.
+
+**2. Least Common Obsession:**
+- "Hoarding" is the least common, with 278 patients.
+
+**3. Average Obsession Scores:** The average obsession scores are fairly similar across all types, ranging from 19 to 21.
+- "Hoarding" has the highest average obsession score of 21.
+- All other types ("Symmetry," "Religious," "Contamination," and "Harm-related") have an average score of either 19 or 20.
+
+**4. Patient Counts:** 
+- The patient counts for the various obsession types are relatively close, with the smallest difference being between "Symmetry" (280) and "Hoarding" (278) and the largest between "Harm-related" (333) and "Hoarding" (278).
+
+### Summary
+The data indicates that "Harm-related" obsessions are the most prevalent among patients, while "Hoarding" is the least common. Despite the differences in patient counts, the average obsession scores are relatively uniform, with "Hoarding" slightly higher than the others. This suggests that while the prevalence of different types of obsessions varies, the severity (as measured by the average obsession score) is consistent across different types.
+
+
+<img width="748" alt="obsession_type" src="https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/assets/173167594/ab352b90-ac5a-490e-b3a1-b62977a58c95">
+
+*Donut chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
+
+
+### 5. What is the most common Compulsion Type (Count) & its respective Average Compulsion Score
+Examines the most frequent types of compulsions in OCD patients. By calculating the count of each compulsion type and their respective average compulsion scores, we can gain insights into common compulsive behaviors and their severity.
+
+```sql
+SELECT
+    Compulsion_Type,
+    COUNT(Patient_ID) AS patient_count,
+    AVG(Y_BOCS_Score_Obsessions) AS avg_obs_score
+
+FROM 
+    PortfolioProject..ocd_patient_dataset
+
+GROUP BY Compulsion_Type
+
+ORDER BY patient_count;
+```
+
+### Key Trends
+
+**1. Most Common Compulsion:** 
+- "Washing" is the most common compulsion type, with 321 patients.
+
+**2. Least Common Compulsion:**
+- "Ordering" is the least common, with 285 patients.
+
+**3. Average Compulsion Scores:** The average compulsion scores are fairly consistent across different types, ranging from 19 to 20.
+- "Checking" and "Washing" have an average compulsion score of 19.
+- "Ordering," "Praying," and "Counting" have an average compulsion score of 20.
+
+**4. Patient Counts:** 
+- The patient counts for compulsion types vary, with "Washing" having the highest count and "Ordering" the lowest, indicating different prevalence rates among these behaviors.
+
+### Summary
+The data reveals that "Washing" is the most common compulsion among OCD patients, while "Ordering" is the least common. Despite variations in patient counts, the average compulsion scores remain relatively stable across different types. This suggests that while the frequency of specific compulsions may differ, their average severity (as measured by the average compulsion score) shows consistency. Understanding these patterns can assist clinicians in tailoring treatment strategies to address the diverse manifestations of OCD.
+
+<img width="693" alt="compulsion_type" src="https://github.com/suttiprapasutara/SQL_PowerBI_Project_OCD_Patient_Analytics/assets/173167594/86741fff-07f0-40e0-8524-2c79c6868a70">
+
+*Donut chart visualizing the distribution of OCD patients by gender; Power BI was utilized to create this chart from my SQL query results*
+
+
+# What I Learned
+Through analyzing the OCD Patient Dataset using SQL and PowerBI, several key insights were gained:
+- **Demographic Insights:** Understanding the distribution of OCD across genders and ethnicities provided insights into potential demographic factors influencing OCD prevalence and symptom severity.
+- **Symptom Analysis:** Examining the types of obsessions and compulsions prevalent among patients highlighted common behavioral patterns and their associated severity scores.
+- **Temporal Trends:** Observing the trends in diagnosis over time uncovered seasonal variations and possible external factors influencing OCD incidence.
+
+# Conclusion
+This project provided valuable insights into the demographic and clinical profiles of OCD patients, highlighting several key findings:
+- **Prevalence and Severity:** "Harm-related" obsessions and "Washing" compulsions were among the most prevalent types, indicating areas where clinical interventions may be focused.
+- **Temporal Patterns:** Seasonal fluctuations in OCD diagnoses and stable average scores across different types of symptoms suggest consistent patterns in symptom manifestation.
+- **Implications for Treatment:** Understanding these patterns can aid in developing targeted treatment strategies that address specific symptom profiles and demographic disparities among OCD patients.
+
+By leveraging SQL for data manipulation and PowerBI for visualization, this project not only provided actionable insights for healthcare professionals but also underscored the importance of data-driven approaches in understanding and managing complex psychiatric conditions like OCD. Future directions may involve deeper dives into sub-group analyses and integrating additional datasets to further enrich our understanding of OCD's multifaceted nature.
+
+
+
+
+
+
+
+
 
 
 
